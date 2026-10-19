@@ -147,10 +147,22 @@ nav {
   margin-bottom: 2.5rem;
 }
 .hero-btns {
+  position: relative;
+  z-index: 10;
   display: flex;
-  gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 16px;
+  pointer-events: auto;
+}
+
+.hero-btns a {
+  position: relative;
+  z-index: 11;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
 }
 .btn-primary {
   background: var(--gold);
